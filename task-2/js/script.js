@@ -1,5 +1,27 @@
 let skillsArr = [];
 
+//form validation
+$('form[name="addSkill"]').submit((e) => {
+    e.preventDefault();
+});
+
+$('form[name="addSkill"]').validate({
+    rules: {
+        'skill-name': 'required',
+        'skill-range': 'required'
+    },
+    submitHandler: function() {
+        // On success validation
+        let skillName = $('#skill-name').val();
+        let skillRange = +$('#skill-range').val();
+
+        skillsArr.push(new Skill(skillName, skillRange));
+
+        sortSkills(skillsArr);
+        buildRange();
+    }
+})
+
 // Skill constructor;
 class Skill {
     constructor(skillName, skillRange) {
@@ -7,17 +29,6 @@ class Skill {
         this.skillRange = skillRange
     }
 }
-
-// Get data and create skill 
-$('#add-skill-btn').click(() => {
-    let skillName = $('#skill-name').val();
-    let skillRange = +$('#skill-range').val();
-
-    skillsArr.push(new Skill(skillName, skillRange));
-
-    sortSkills(skillsArr);
-    buildRange();
-})
 
 // Sort skills by descending
 function sortSkills(arr) {
@@ -29,6 +40,8 @@ function sortSkills(arr) {
 // Build range of skills
 function buildRange() {
     $('.skill-range-container').html('');
+
+    console.log(skillsArr);
 
     skillsArr.forEach(item => {
         $('.skill-range-container').html(

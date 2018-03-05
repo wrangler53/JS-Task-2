@@ -7,6 +7,7 @@
     <title>Task 2</title>
 
     <script src="lib/jquery-3.3.1.slim.min.js"></script>
+    <script src="lib/jquery.validate.min.js"></script>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,16 +16,16 @@
     <div class="container">
         <h1>Skills</h1>
         <div class="add-skill-container">
-            <form>
+            <form action="" name="addSkill">
                 <div class="add-skill-item">
-                    <label for="skill-name">Skill name:</label>
+                    <label for="skill-name" class="skill-label">Skill name:</label>
                     <input type="text" name="skill-name" id="skill-name" maxlength="100" placeholder="Enter skill name">                    
                 </div>
                 <div class="add-skill-item">
-                    <label for="skill-range">Skill range:</label>
+                    <label for="skill-range" class="skill-label">Skill range:</label>
                     <input type="number" name="skill-range" id="skill-range" max="100" min="1" placeholder="Enter skill range">                    
                 </div>
-                <input type="button" value="Add skill" id="add-skill-btn">
+                <input type="submit" value="Add skill" id="add-skill-btn">
             </form>
         </div>
         <div class="skill-range-container">
