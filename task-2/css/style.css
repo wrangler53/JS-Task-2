@@ -1,0 +1,60 @@
+.container {
+    width: 40%;
+    margin: 20px auto;
+    font-family: Calibri, sans-serif;
+}
+
+h1 {
+    color: #14C177;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+input {
+    outline: none;
+}
+
+/* Styles for add skill box */
+.add-skill-container {
+    border: 2px solid #90E2BF;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.add-skill-item {
+    margin-bottom: 15px;
+}
+
+.add-skill-item label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+.add-skill-item input {
+    width: calc(100% - 155px);
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+    font-size: 14px;
+}
+
+.add-skill-item input::placeholder {
+    font-family: Calibri, sans-serif;
+    font-size: 14px;
+}
+
+#add-skill-btn {
+    padding: 8px 18px;
+    border-color: black;
+    border-radius: 7px;
+    background: black;
+    font-family: Calibri, sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+#add-skill-btn:hover {
+    cursor: pointer;
+}
