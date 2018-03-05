@@ -14,14 +14,3 @@ $('.container').scroll(function() {
         }
     })
 });
-
-$('header').find('a').on('click', function () {
-    let id = $(this).attr('href');
-
-    console.log(id)
-    $('.container').animate({
-        scrollTop: $(id).offset().top
-    }, 500);
-
-    return false;
-});
