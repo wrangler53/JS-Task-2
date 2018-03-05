@@ -1,0 +1,39 @@
+/* Text style */
+.container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    line-height: 24px;
+}
+
+.container h1 {
+    margin: 15px 0;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+/* GO to top btn */
+#go-to-top-btn {
+    position: fixed;
+    display: none;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: #444444;
+}
+
+#go-to-top-btn:hover {
+    cursor: pointer;
+}
+
+#go-to-top-btn img {
+    position: relative;
+    width: 60%;
+    left: 10px;
+    top: 7px;
+}
