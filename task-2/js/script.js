@@ -48,7 +48,7 @@ function buildRange() {
             $('.skill-range-container').html() + 
             `<div class="skill-item" style="width: ${item.skillRange}%">
                 <span class="skill-item-name">
-                    ${item.skillName}
+                    ${item.skillName} (${item.skillRange}%)
                 </span>
             </div>`
         );
