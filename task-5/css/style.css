@@ -47,7 +47,7 @@
     position: relative;
     right: 30%;
     height: 100vh;
-    transition: all 1.2s;
+    transition: all 1s;
 }
 
 .menu-container input:checked ~ #menu-content {
