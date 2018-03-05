@@ -22,6 +22,10 @@
     cursor: pointer;
 }
 
+.active {
+    background: red;
+}
+
 /* Items style */
 .isotope-item {
     width: 100px;
@@ -36,3 +40,4 @@
     height: 100%;
     object-fit: cover;
 }
+
