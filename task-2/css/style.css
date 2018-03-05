@@ -58,3 +58,19 @@ input {
 #add-skill-btn:hover {
     cursor: pointer;
 }
+
+/* Styles for skill item */
+.skill-item {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #1CC37C;
+}
+
+.skill-item-name {
+    font-size: 14px;
+    color: white;
+}
