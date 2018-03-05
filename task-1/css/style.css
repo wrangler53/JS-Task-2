@@ -14,22 +14,28 @@
 .menu-container > ul > li.menu-item {
     display: inline-block;
     padding: 20px 30px;
-    border: 1px solid black;
+    border: 1px solid #5E5D5D;
     border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    transition: all .2s;
 }
 
 .menu-container > ul > li.menu-item:hover {
     cursor: pointer;
+    color: white;
+    background-color: #4595F7;
+    border: 1px solid #4595F7;
 }
 
 .active {
-    background: red;
+    color: white;
+    background: #4595F7;
 }
 
 /* Items style */
 .isotope-item {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     float: left;
     margin: 10px;
