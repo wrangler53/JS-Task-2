@@ -6,7 +6,9 @@
         "quotes": [2, "single", { "avoidEscape": true }]
     },
     "env": {
-        "browser": true
+        "browser": true,
+        "es6": true,
+        "jquery": true
     },
     "extends": [
         "airbnb-base",

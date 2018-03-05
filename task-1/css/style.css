@@ -1,0 +1,38 @@
+.container {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Menu styles */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu-container > ul > li.menu-item {
+    display: inline-block;
+    padding: 20px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.menu-container > ul > li.menu-item:hover {
+    cursor: pointer;
+}
+
+/* Items style */
+.isotope-item {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+}
+
+.isotope-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
