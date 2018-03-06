@@ -1,4 +1,4 @@
-/* Burger style */
+/* Burger btn style */
 .menu-container input {
     display: none;
 }
@@ -50,6 +50,7 @@
     transition: all 1s;
 }
 
+/* Show menu on click */
 .menu-container input:checked ~ #menu-content {
     right: 0;
     background: #5E5D5D;

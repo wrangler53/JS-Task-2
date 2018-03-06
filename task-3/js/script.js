@@ -1,4 +1,5 @@
 $('.container').scroll(function() {
+    // Get current position
     let currentPosition = $('.container').offset().top;
 
     $('section').each(function() {

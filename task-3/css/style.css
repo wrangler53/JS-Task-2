@@ -27,10 +27,6 @@ a.active {
     color: #4FBC96;
 }
 
-/* nav > ul > li.active > a.ac {
-    color: #4FBC96;
-} */
-
 nav > ul > li > a {
     display: block;
     padding: 20px;

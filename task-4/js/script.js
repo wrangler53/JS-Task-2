@@ -3,12 +3,13 @@ $(window).scroll(() => {
     if ($(this).scrollTop() >= 50) {        
         $('#go-to-top-btn').fadeIn(200);    // Fade in the arrow
     } else {
-        $('#go-to-top-btn').fadeOut(200);   // Else fade out the arrow
+        $('#go-to-top-btn').fadeOut(200);   // Fade out the arrow
     }
 });
 
-$('#go-to-top-btn').click(() => {      // When arrow is clicked
+// On click on arrow
+$('#go-to-top-btn').click(() => {      
     $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
+        scrollTop : 0                       
     }, 600);
 });
