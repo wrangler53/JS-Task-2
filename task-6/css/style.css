@@ -1,0 +1,79 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container h1 {
+    margin: 25px auto;
+    font-size: 48px;
+    font-family: 'Lobster', cursive;
+    color: #1DAF80;
+}
+
+.item-container {
+    height: calc(100vh - 150px);
+    overflow-y: scroll;
+}
+
+/* Item styles */
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 175px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.item .item-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 5px;
+    height: 100%;
+    background: #1DAF80;
+}
+
+.item .item-date {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    background: white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.item .item-body {
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #F2F0F2;
+}
+
+.item .item-header {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.item .item-text {
+    font-size: 18px;
+}
+
+/* Scrollbar styles */
+/* width */
+.item-container::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Handle */
+.item-container::-webkit-scrollbar-thumb {
+    background: #CDCDCD;
+    border-radius: 10px;
+}

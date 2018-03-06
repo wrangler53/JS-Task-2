@@ -6,9 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task 6</title>
 
-    <script src="script.js"></script>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDUTJ-0VDYR5inMCf5SmQAVBXrFVxjdXa8",
+            authDomain: "js-task-2-1a09a.firebaseapp.com",
+            databaseURL: "https://js-task-2-1a09a.firebaseio.com",
+            projectId: "js-task-2-1a09a",
+            storageBucket: "",
+            messagingSenderId: "498824163500"
+        };
+        firebase.initializeApp(config);
+    </script>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>My lifeway :)</h1>
+        <div class="item-container"></div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
